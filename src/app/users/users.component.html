@@ -1,0 +1,35 @@
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Gender</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let user of userdata; let i=index">
+
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.gender}}</td>
+
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Gender</th>
+
+        </tr>
+    </tfoot>
+</table>
